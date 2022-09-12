@@ -1,0 +1,47 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+        background-image: url("{%static 'img/f.jpg'%}");
+        background-attachment:fixed;
+        height:100%;
+        background-repeat:no-repeat;
+        background-position:center;
+        }
+    </style>
+
+</head>
+<body>
+<a href="{% url 'index' %}"><img src="{%static 'img/fonz.png'%}" width="90" height="70" hspace="5" vspace="5" alt="" style="vertical-align:middle"></a>
+<a href="{% url 'prob' %}"><img src="{%static 'img/a.png'%}" width="160" height="70" hspace="5" vspace="5" alt="" style="vertical-align:middle"></a>
+<a href="{% url 'xman' %}"><img src="{%static 'img/x.png'%}" width="90" height="50" hspace="5" vspace="5" alt="" style="vertical-align:middle"></a>
+<a href="{% url 'fantastic' %}"><img src="{%static 'img/4.png'%}" width="150" height="50" hspace="5" vspace="5" alt="" style="vertical-align:middle"></a>
+<a href="{% url 'stgal' %}"><img src="{%static 'img/sg.png'%}" width="150" height="50" hspace="5" vspace="5" alt="" style="vertical-align:middle"></a>
+
+<hr/>
+    <h1 align="center" ><font color="black" size="12">Fantastic Four</font></h1>
+    <h2><font color="white">«Фантастическая четвёрка» (англ. Fantastic Four) — вымышленная команда супергероев комиксов компании Marvel Comics, дебютировавшая
+        в The Fantastic Four (Ноябрь 1961). Создателями выступили сценарист Стэн Ли и художник Джек Кирби, которые намеревались сформировать первый супергеройский
+        союз, членами которого были бы представители одной семьи.
+
+В состав группы входят четверо персонажей-основателей, получившие свои суперспособности в результате воздействия космических лучей во время научной экспедиции
+        в космосе: Мистер Фантастик (настоящее имя — Рид Ричардс) — лидер команды и выдающийся учёный, обладающей способностью растягивать и сжимать конечности
+        своего тела, Женщина-невидимка (Настоящее имя — Сьюзан «Сью» Шторм) — возлюбленная Рида, впоследствии вышедшая за него замуж, которая способна становиться
+        невидимой и проецировать прочнейшие силовые поля, Человек-факел (Настоящее имя — Джонатан «Джонни» Шторм) — младший брат Сью, который в состоянии генерировать
+        огонь вокруг своего тела и летать, Существо (Настоящее имя — Бенджамин «Бен» Гримм) — сварливый, но добродушный лучший друг Рида и квалифицированный пилот,
+        в чьих руках сосредоточена невероятная сила, благодаря прочной каменной плоти.</font></h2>
+    <h1 align="center"><font color="white" size="10">Герои:</font></h1>
+    <a href="{% url 'index' %}"><img src="{%static 'img/f1.jpg'%}" width="400" height="400" hspace="50" vspace="20" alt="" name="Spider-Man" style="vertical-align:middle"></a>
+    <a href="{% url 'index' %}"><img src="{%static 'img/f2.jpg'%}" width="400" height="400" hspace="0" vspace="20" alt="" name="Spider-Man" style="vertical-align:middle"></a>
+    <a href="{% url 'index' %}"><img src="{%static 'img/f3.jpg'%}" width="400" height="400" hspace="50" vspace="20" alt="" name="Spider-Man" style="vertical-align:middle"></a>
+    <a href="{% url 'index' %}"><img src="{%static 'img/f4.jpg'%}" width="400" height="400" hspace="505" vspace="20" alt="" name="Spider-Man" style="vertical-align:middle"></a>
+
+</body>
+</html>

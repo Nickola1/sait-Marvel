@@ -1,0 +1,40 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+        background-image: url("{%static 'img/spider.jpg'%}");
+        background-attachment:fixed;
+        height:100%;
+        background-repeat:no-repeat;
+        background-position:center;
+        }
+    </style>
+
+</head>
+<body>
+<a href="{% url 'index' %}"><img src="{%static 'img/fonz.png'%}" width="90" height="70" hspace="5" vspace="5" alt="" style="vertical-align:middle"></a>
+<a href="{% url 'prob' %}"><img src="{%static 'img/a.png'%}" width="160" height="70" hspace="5" vspace="5" alt="" style="vertical-align:middle"></a>
+<a href="{% url 'xman' %}"><img src="{%static 'img/x.png'%}" width="90" height="50" hspace="5" vspace="5" alt="" style="vertical-align:middle"></a>
+<a href="{% url 'fantastic' %}"><img src="{%static 'img/4.png'%}" width="150" height="50" hspace="5" vspace="5" alt="" style="vertical-align:middle"></a>
+<a href="{% url 'stgal' %}"><img src="{%static 'img/sg.png'%}" width="150" height="50" hspace="5" vspace="5" alt="" style="vertical-align:middle"></a>
+
+<hr/>
+    <h1 align="center" ><font color="black" size="12">Spider-Man</font></h1>
+    <h2><font color="white"></font></h2>
+    <h1 align="center"><font color="white" size="10"></font></h1>
+    <h1 align="center"><font color="white" size="10">Комиксы:</font></h1>
+
+    <a><img src="{%static 'img/comspider2/6.jpg'%}" width="600" height="920" hspace="50" vspace="20" alt="" name="Spider-Man" style="vertical-align:middle"></a>
+    <a><img src="{%static 'img/comspider2/7.jpg'%}" width="600" height="920" hspace="50" vspace="20" alt="" name="Spider-Man" style="vertical-align:middle"></a>
+<a href="{% url 'com3a' %}"><button style="height:30px;width:40px"> < </button></a>
+<a><font color="white" size="5">Страница 7-8</font></a>
+<a href="{% url 'com5a' %}"><button style="height:30px;width:40px"> > </button></a>
+</body>
+</html>

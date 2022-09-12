@@ -1,0 +1,19 @@
+{% extends 'main/shablon.html' %}
+
+{% block title %}
+Друзья
+{% endblock %}
+
+{% block osntext %}
+    <h1>У тебя нет друзей</h1>
+    {% if text %}
+        {% for element in text %}
+            <div class = "alert alert-warning mt-2">
+                <h3>{{ element.title }}</h3>
+                <p>{{ element.text }}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Нет записей.</p>
+    {% endif %}
+{% endblock %}
